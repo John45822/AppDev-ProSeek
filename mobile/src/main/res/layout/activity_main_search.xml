@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00023E"
+    tools:context=".MainActivityHomeScr">
+
+    <LinearLayout
+        android:id="@+id/logo_section"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/proseektxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/proseektext" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/servicetxt"
+        android:layout_width="105dp"
+        android:layout_height="59dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="167dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/servicestext" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upperfunction"
+        android:layout_below="@+id/logo_section"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext_2_bg"
+            android:drawablePadding="20dp"
+            android:hint="search"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="text"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/message1" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/profileremovebg" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upperfunction"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/cards_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upperfunction"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:gravity="center_vertical">
+
+                <!-- Profile image -->
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/profileremovebg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/rounded_edittext_2_bg"
+                    android:padding="4dp" />
+
+                <!-- Text and stars -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="/@emily_01"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maramag"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="★★★★★"
+                        android:textSize="14sp"
+                        android:textColor="#00023E"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Chat bubble -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/message1"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
