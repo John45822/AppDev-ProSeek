@@ -132,7 +132,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="/@emily_01"
+                        android:text="emily_01"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -155,33 +155,257 @@
 
                 <!-- Chat bubble -->
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/message1"
-                    android:layout_marginStart="8dp"/>
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upperfunction"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:gravity="center_vertical">
+
+                <!-- Profile image -->
+                <ImageView
+                    android:id="@+id/profile_image1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/profileremovebg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/rounded_edittext_2_bg"
+                    android:padding="4dp" />
+
+                <!-- Text and stars -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="george_02"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maramag"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="★★★★★"
+                        android:textSize="14sp"
+                        android:textColor="#00023E"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Chat bubble -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/blackmessengerrmbg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upperfunction"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:gravity="center_vertical">
+
+                <!-- Profile image -->
+                <ImageView
+                    android:id="@+id/profile_image2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/profileremovebg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/rounded_edittext_2_bg"
+                    android:padding="4dp" />
+
+                <!-- Text and stars -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="maria_03"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maramag"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="★★★★★"
+                        android:textSize="14sp"
+                        android:textColor="#00023E"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Chat bubble -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/blackmessengerrmbg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upperfunction"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:gravity="center_vertical">
+
+                <!-- Profile image -->
+                <ImageView
+                    android:id="@+id/profile_image3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/profileremovebg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/rounded_edittext_2_bg"
+                    android:padding="4dp" />
+
+                <!-- Text and stars -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="kristy_04"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maramag"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="★★★★★"
+                        android:textSize="14sp"
+                        android:textColor="#00023E"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Chat bubble -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/blackmessengerrmbg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upperfunction"
+                android:layout_margin="7dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:gravity="center_vertical">
+
+                <!-- Profile image -->
+                <ImageView
+                    android:id="@+id/profile_image4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/profileremovebg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/rounded_edittext_2_bg"
+                    android:padding="4dp" />
+
+                <!-- Text and stars -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="spongy_05"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maramag"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="★★★★★"
+                        android:textSize="14sp"
+                        android:textColor="#00023E"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Chat bubble -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/blackmessengerrmbg" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </RelativeLayout>

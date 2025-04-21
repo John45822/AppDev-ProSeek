@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,25 +27,33 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        TextView username = (TextView) findViewById(R.id.username);
-        TextView password = (TextView) findViewById(R.id.password);
-        Button loginbtn = (Button) findViewById(R.id.loginbtn);
-        Button createacc = (Button) findViewById(R.id.createacc);
-        //Admin and Admin
+
+        ProseekDB dbHelper;
+        Button loginbtn, createacc;
+        EditText etEmail,etPwd;
+
+        dbHelper = new ProseekDB(this);
+
+        etEmail = findViewById(R.id.email);
+        etPwd = findViewById(R.id.password);
+        loginbtn = findViewById(R.id.loginbtn);
+        createacc = findViewById(R.id.createacc);
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-                    //Correct
-                    Toast.makeText(MainActivity.this, "LOGIN SUCCESSFULL", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, MainActivityHomeScr.class); // if login success, then go
+                boolean isLoggedID = dbHelper.checkUser(etEmail.getText().toString(), etPwd.getText().toString());
+                if (isLoggedID){
+                    Intent intent = new Intent(MainActivity.this, MainActivityHomeScr.class);
                     startActivity(intent);
-                }else {
-                    //Wrong
-                    Toast.makeText(MainActivity.this, "LOGIN FAILED", Toast.LENGTH_SHORT).show();
+
+                }else{
+                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_LONG).show();
+
                 }
             }
         });
+
+
         createacc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,5 +62,34 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
+
+
+        //Admin and Admin
+//        loginbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+//                    //Correct
+//                    Toast.makeText(MainActivity.this, "LOGIN SUCCESSFULL", Toast.LENGTH_SHORT).show();
+//                    Intent intent = new Intent(MainActivity.this, MainActivityHomeScr.class); // if login success, then go
+//                    startActivity(intent);
+//                }else {
+//                    //Wrong
+//                    Toast.makeText(MainActivity.this, "LOGIN FAILED", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
+//        createacc.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,MainActivityCreateAcc.class);
+//                startActivity(intent);
+//
+//            }
+//        });
     }
 }

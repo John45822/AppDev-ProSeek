@@ -1,6 +1,10 @@
 package com.example.proseekservices;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,5 +25,22 @@ public class MainActivityHomeScr extends AppCompatActivity {
             return insets;
         });
 
+        EditText searchbar = findViewById(R.id.searchbar);
+        searchbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout tutoring = findViewById(R.id.tutoring);
+        tutoring.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                startActivity(intent);
+            }
+        });
     }
 }

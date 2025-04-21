@@ -55,7 +55,7 @@
         android:gravity="center_vertical">
 
         <EditText
-            android:id="@+id/search"
+            android:id="@+id/searchbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -105,7 +105,7 @@
     <LinearLayout
         android:id="@+id/service_section"
         android:layout_width="372dp"
-        android:layout_height="501dp"
+        android:layout_height="400dp"
         android:layout_below="@+id/frequently_searched"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
@@ -130,6 +130,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/tutoring"
                 android:layout_columnWeight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
@@ -154,6 +155,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/housechores"
                 android:layout_columnWeight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
@@ -174,10 +176,11 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Item 2 -->
+            <!-- Item 3 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/project"
                 android:layout_columnWeight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
@@ -197,10 +200,11 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Item 2 -->
+            <!-- Item 4 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/assistant"
                 android:layout_columnWeight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">

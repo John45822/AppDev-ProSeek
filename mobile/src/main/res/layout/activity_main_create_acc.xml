@@ -46,13 +46,14 @@
         android:drawablePadding="20dp"
         android:hint="email"
         android:padding="10dp"
+        android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:textColorHint="@color/black" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
+        android:id="@+id/entpassword"
         android:layout_below="@+id/email"
         android:background="@drawable/rounded_edittext_bg"
         android:hint="password"
@@ -69,7 +70,7 @@
         android:id="@+id/confirmpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/entpassword"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="60dp"
@@ -85,7 +86,7 @@
         android:id="@+id/create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/confirmpass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="105dp"
         android:text="CREATE"
