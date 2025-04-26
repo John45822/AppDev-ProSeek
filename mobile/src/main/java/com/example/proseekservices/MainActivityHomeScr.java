@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -39,6 +41,15 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView urprofile = findViewById(R.id.urprofile);
+        urprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivityProfile.class);
                 startActivity(intent);
             }
         });
