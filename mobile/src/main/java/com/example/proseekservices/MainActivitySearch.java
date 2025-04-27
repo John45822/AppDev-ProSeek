@@ -32,5 +32,15 @@ public class MainActivitySearch extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView messages = findViewById(R.id.messages);
+        messages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivitySearch.this, MainActivityMessages.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }

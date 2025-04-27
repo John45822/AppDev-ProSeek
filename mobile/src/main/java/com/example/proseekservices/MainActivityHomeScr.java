@@ -53,5 +53,16 @@ public class MainActivityHomeScr extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView messages = findViewById(R.id.messages);
+        messages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivityMessages.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 }

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProSeekServices"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityConversation"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityMessages"
             android:exported="false" />
         <activity

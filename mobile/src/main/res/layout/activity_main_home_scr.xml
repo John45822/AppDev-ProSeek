@@ -71,6 +71,7 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:id="@+id/messages"
             android:layout_margin="5dp"
             android:src="@drawable/message1" />
 
