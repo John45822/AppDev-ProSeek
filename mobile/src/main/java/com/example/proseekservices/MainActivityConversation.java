@@ -2,6 +2,7 @@ package com.example.proseekservices;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ScrollView;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,7 @@ public class MainActivityConversation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_conversation);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -31,5 +33,12 @@ public class MainActivityConversation extends AppCompatActivity {
             }
         });
 
+        ImageButton btnBack = findViewById(R.id.btnBack); //
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); //  Closes the conversation and returns to previous screen
+            }
+        });
     }
 }
