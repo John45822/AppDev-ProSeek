@@ -61,7 +61,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/blackmessengerrmbg" />
+                android:src="@drawable/truemess" />
 
             <TextView
                 android:id="@+id/chats_label"
@@ -70,7 +70,7 @@
                 android:text="CHATS"
                 android:textStyle="bold"
                 android:textColor="#333333"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:layout_marginStart="8dp" />
         </LinearLayout>
 
@@ -100,7 +100,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/progirl1" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -144,7 +144,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/proboy1" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -188,7 +188,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/progirl2" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -232,7 +232,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/proboy1" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -276,7 +276,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/proboy3" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -320,7 +320,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/progirl4" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -364,7 +364,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/profileremovebg" />
+                        android:src="@drawable/progirl3" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -375,7 +375,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="\@fritz"
+                            android:text="\@ma.santos"
                             android:textColor="#333333"
                             android:textSize="16sp"
                             android:textStyle="bold" />

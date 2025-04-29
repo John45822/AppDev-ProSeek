@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:background="#00023E"
-    tools:context=".MainActivityProfile">
+    tools:context=".MainActivityProOP">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         <!-- Profile Section -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="289dp"
+            android:layout_height="257dp"
             android:layout_marginTop="25dp"
             android:gravity="top"
             android:orientation="horizontal"
@@ -36,14 +36,14 @@
                     android:id="@+id/profile_image"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/proboy1" />
+                    android:src="@drawable/progirl1" />
 
                 <TextView
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="8dp"
-                    android:text="\@ethan01"
+                    android:text="\@emily_01"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:background="#132156"
                         android:padding="2dp"
-                        android:text="ETHAN CLARK"
+                        android:text="EMILY SMITH"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -203,8 +203,9 @@
                     android:layout_marginTop="16dp"
                     android:orientation="vertical">
 
-                    <!-- Edit Profile -->
+                    <!-- Message -->
                     <LinearLayout
+                        android:id="@+id/mess"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
@@ -215,18 +216,18 @@
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:layout_marginEnd="8dp"
-                            android:src="@drawable/pen2rmvbg" />
+                            android:src="@drawable/messwhite" />
 
                         <TextView
                             android:id="@+id/edit_profile"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Edit Profile"
-                            android:textColor="#AAAAAA"
+                            android:text="Message"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
                     </LinearLayout>
 
-                    <!-- Transaction History -->
+                    <!-- Availability -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -244,36 +245,13 @@
                             android:id="@+id/transaction_history"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Transaction History"
-                            android:textColor="#AAAAAA"
+                            android:text="Available for Service"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
                     </LinearLayout>
 
-                    <!-- Settings -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingBottom="8dp">
 
-                        <ImageView
-                            android:layout_width="18dp"
-                            android:layout_height="18dp"
-                            android:layout_marginEnd="8dp"
-                            android:src="@drawable/seeting1" />
-
-                        <TextView
-                            android:id="@+id/settings"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingRight="10dp"
-                            android:text="Settings"
-                            android:textColor="#AAAAAA"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Logout -->
+                    <!-- Book Now -->
                     <LinearLayout
                         android:id="@+id/loggingout"
                         android:layout_width="wrap_content"
@@ -285,14 +263,14 @@
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:layout_marginEnd="8dp"
-                            android:src="@drawable/logout_bg" />
+                            android:src="@drawable/bookk_rembg" />
 
                         <TextView
                             android:id="@+id/logout"
                             android:layout_width="57dp"
                             android:layout_height="match_parent"
-                            android:text="Logout"
-                            android:textColor="#FF5555"
+                            android:text="Book Now"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -302,6 +280,9 @@
         </LinearLayout>
 
         <!-- Ratings & Reviews -->
+
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -314,9 +295,25 @@
             android:paddingBottom="8dp" />
 
         <!-- Multiple Reviews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_2_bg"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to rate and write review"
+                android:textStyle="bold"
+                android:textColor="#00023E">
+            </EditText>
+
+        </LinearLayout>
         <!-- Review 1 -->
         <LinearLayout
-            android:id="@+id/rate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext_2_bg"
@@ -341,7 +338,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\@emily_01"
+                    android:text="\@franky_05"
                     android:textStyle="bold"
                     android:textColor="#000000"
                     android:textSize="12sp" />
