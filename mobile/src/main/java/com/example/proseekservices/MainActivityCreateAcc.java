@@ -64,6 +64,17 @@ public class MainActivityCreateAcc extends AppCompatActivity {
             }
         });
 
+        Button backToLogin = findViewById(R.id.back_to_login);
+        backToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityCreateAcc.this, MainActivity.class); // assuming MainActivity is the login screen
+                startActivity(intent);
+                finish(); // optional: closes the create account screen
+            }
+        });
+
+
 
 
 

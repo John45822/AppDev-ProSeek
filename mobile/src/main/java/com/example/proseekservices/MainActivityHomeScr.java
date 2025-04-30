@@ -41,9 +41,102 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Tutoring"); // ✅ Add this line
                 startActivity(intent);
             }
         });
+
+
+        LinearLayout houseChores = findViewById(R.id.housechores);
+        houseChores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "House Chores");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout project = findViewById(R.id.project);
+        project.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Project");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout assistant = findViewById(R.id.assistant);
+        assistant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Assistant");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout healthcare = findViewById(R.id.healthcare);
+        healthcare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Health Care");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout fooddelivery = findViewById(R.id.fooddelivery);
+        fooddelivery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Food Delivery");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout photography = findViewById(R.id.photography);
+        photography.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Photography");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout rentals = findViewById(R.id.rentals);
+        rentals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Rentals");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout machinery = findViewById(R.id.machinery);
+        machinery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Machinery");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout tailoring = findViewById(R.id.tailoring);
+        tailoring.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("serviceType", "Tailoring");
+                startActivity(intent);
+            }
+        });
+
 
         ImageView urprofile = findViewById(R.id.urprofile);
         urprofile.setOnClickListener(new View.OnClickListener() {
