@@ -121,6 +121,7 @@
                         android:src="@drawable/progirl1" />
 
                     <LinearLayout
+                        android:id="@+id/chat_emily_01"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -165,6 +166,7 @@
                         android:src="@drawable/proboy1" />
 
                     <LinearLayout
+                        android:id="@+id/chat_johnduskin"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -194,6 +196,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/chat_alexa99"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -238,6 +241,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/chat_mikee_02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -282,6 +286,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/chat_davee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -326,6 +331,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/chat_nanayluz"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -370,6 +376,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/chat_ma_santos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
