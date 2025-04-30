@@ -52,5 +52,14 @@ public class MainActivitySearch extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        LinearLayout firstprovider = findViewById(R.id.list);
+        firstprovider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivitySearch.this, MainActivityProOP.class);
+                startActivity(intent);
+            }
+        });
     }
 }
