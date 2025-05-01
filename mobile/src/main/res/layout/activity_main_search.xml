@@ -107,13 +107,13 @@
                 <!-- Profile image -->
                 <ImageView
                     android:id="@+id/profile_image"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profileremovebg"
-                    android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginEnd="2dp"
                     android:background="@drawable/rounded_edittext_2_bg"
-                    android:padding="4dp" />
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/progirl1" />
 
                 <!-- Text and stars -->
                 <LinearLayout
@@ -169,11 +169,11 @@
                 <!-- Profile image -->
                 <ImageView
                     android:id="@+id/profile_image1"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profileremovebg"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/proboy2"
                     android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
                     android:padding="4dp" />
 
@@ -187,7 +187,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="george_02"
+                        android:text="s.john"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -195,7 +195,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Maramag"
+                        android:text="Valencia"
                         android:textSize="14sp"
                         android:textColor="#444444"/>
 
@@ -231,11 +231,11 @@
                 <!-- Profile image -->
                 <ImageView
                     android:id="@+id/profile_image2"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profileremovebg"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/progirl2"
                     android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
                     android:padding="4dp" />
 
@@ -249,7 +249,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="maria_03"
+                        android:text="alexa99"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -257,7 +257,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Maramag"
+                        android:text="Valencia"
                         android:textSize="14sp"
                         android:textColor="#444444"/>
 
@@ -292,11 +292,11 @@
                 <!-- Profile image -->
                 <ImageView
                     android:id="@+id/profile_image3"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profileremovebg"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/proboy1"
                     android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
                     android:padding="4dp" />
 
@@ -310,7 +310,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="kristy_04"
+                        android:text="ethan01"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -353,11 +353,11 @@
                 <!-- Profile image -->
                 <ImageView
                     android:id="@+id/profile_image4"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profileremovebg"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/proboy3"
                     android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
                     android:padding="4dp" />
 
@@ -371,7 +371,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="spongy_05"
+                        android:text="davesmith"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -379,7 +379,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Maramag"
+                        android:text="Malaybalay"
                         android:textSize="14sp"
                         android:textColor="#444444"/>
 
@@ -414,11 +414,11 @@
                 <!-- Profile image -->
                 <ImageView
                     android:id="@+id/profile_image5"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profileremovebg"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/progirl4"
                     android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
                     android:padding="4dp" />
 
@@ -432,7 +432,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="emily_01"
+                        android:text="nancyluz"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>

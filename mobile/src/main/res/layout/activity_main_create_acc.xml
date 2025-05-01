@@ -1,175 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
-    tools:context=".MainActivityConversation">
+    android:background="#00023E"
+    tools:context="MainActivityCreateAcc">
 
-    <!-- Top Bar -->
     <LinearLayout
-        android:id="@+id/top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#00023E"
-        android:gravity="center_vertical"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:orientation="horizontal">
-
-
-
-        <ImageView
-            android:id="@+id/profile_pic_small"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="12dp"
-            android:src="@drawable/profileremovebg"
-            android:contentDescription="Profile" />
-
-        <TextView
-            android:id="@+id/username_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:text="\@ethan01"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <!-- Big Profile Section -->
-    <LinearLayout
-        android:id="@+id/profile_section"
-        android:layout_width="match_parent"
+        android:id="@+id/logo_section"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_below="@id/top_bar"
-        android:layout_marginTop="16dp">
-
-        <ImageView
-            android:id="@+id/profile_pic_big"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/profileremovebg"
-            android:padding="4dp"
-            android:contentDescription="Profile Big" />
-
-        <TextView
-            android:id="@+id/username_big"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="\@ethan01"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#333333" />
-
-        <TextView
-            android:id="@+id/connected_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="You are now connected."
-            android:textSize="14sp"
-            android:textColor="#666666" />
-    </LinearLayout>
-
-    <!-- Conversation Section -->
-    <ScrollView
-        android:id="@+id/conversation_scroll"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_below="@id/profile_section"
-        android:layout_above="@id/message_input_section"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-
-        <LinearLayout
-            android:id="@+id/messages_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            android:padding="12dp">
-
-            <!-- User Message (left) -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="start"
-                android:layout_marginBottom="8dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/profileremovebg"
-                    android:layout_gravity="bottom" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/message_leftbg"
-                    android:layout_marginStart="8dp"
-                    android:padding="8dp"
-                    android:text="Hi! I’m interested in learning more about your services. Could you please send me the details and pricing? Thank you!"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <!-- Response Message (right) -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="end"
-                android:layout_marginBottom="8dp"
-                android:layout_gravity="end">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/message_rightbg"
-                    android:padding="8dp"
-                    android:text="Hi! Thanks for reaching out 😊 Here are the details and pricing. Let me know if you have any questions—we’re here to help!"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-    <!-- Message Input Section -->
-    <LinearLayout
-        android:id="@+id/message_input_section"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="@drawable/message_intputbg">
+        android:layout_centerHorizontal="true">
 
-        <EditText
-            android:id="@+id/message_input"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Message..."
-            android:padding="12dp"
-            android:background="@drawable/message_edittext"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            android:maxLines="4" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
 
-        <ImageButton
-            android:id="@+id/send_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:contentDescription="Send Message"
-            android:src="@android:drawable/ic_menu_send" />
+        <ImageView
+            android:id="@+id/logotext"
+            android:layout_width="119dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logotext" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_section"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawablePadding="20dp"
+        android:hint="email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entpassword"
+        android:layout_below="@+id/email"
+        android:background="@drawable/rounded_edittext_bg"
+        android:hint="password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/confirmpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entpassword"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:drawablePadding="20dp"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text="CREATE"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button_outline"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        />
 
 </RelativeLayout>
