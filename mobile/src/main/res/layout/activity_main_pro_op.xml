@@ -161,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:background="#132156"
                         android:padding="2dp"
-                        android:text="MARAHAG"
+                        android:text="MARAMAG"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />

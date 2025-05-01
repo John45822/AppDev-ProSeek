@@ -30,15 +30,10 @@ public class MainActivityConversation extends AppCompatActivity {
             return insets;
         });
 
-        // Get the passed username from the Intent
-        String username = getIntent().getStringExtra("username");
-        Log.d(TAG, "Received username: " + username);
-
-        // Check if the username is passed, otherwise show a default message
-        if (username == null) {
-            Log.e(TAG, "Username is null. The intent did not pass the username.");
-            username = "Unknown User";
-        }
+        // Get the passed name and email from the Intent
+        String name = getIntent().getStringExtra("name");
+        String email = getIntent().getStringExtra("email");
+        Log.d(TAG, "Received name: " + name + ", email: " + email);
 
         // Initialize TextViews
         TextView usernameTop = findViewById(R.id.username_top);
@@ -46,8 +41,9 @@ public class MainActivityConversation extends AppCompatActivity {
 
         // Check if the views exist and then update them
         if (usernameTop != null && usernameBig != null) {
-            usernameTop.setText("@" + username);
-            usernameBig.setText("@" + username);
+            String displayName = (name != null && !name.isEmpty()) ? name : "Unknown User";
+            usernameTop.setText("@" + displayName);
+            usernameBig.setText("@" + displayName);
         } else {
             Log.e(TAG, "TextViews for usernameTop or usernameBig are missing in the layout.");
         }
