@@ -41,6 +41,47 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("category", "tutoring");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout housechores = findViewById(R.id.housechores);
+        housechores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("category", "housechores");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout project = findViewById(R.id.project);
+        project.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("category", "project");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout assistant = findViewById(R.id.assistant);
+        assistant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("category", "assistant");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout healthcare = findViewById(R.id.healthcare);
+        healthcare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
+                intent.putExtra("category", "healthcare");
                 startActivity(intent);
             }
         });
@@ -63,6 +104,9 @@ public class MainActivityHomeScr extends AppCompatActivity {
 
             }
         });
+
+
+
 
     }
 }
