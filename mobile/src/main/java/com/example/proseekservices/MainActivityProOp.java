@@ -1,9 +1,6 @@
 package com.example.proseekservices;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivityProOP extends AppCompatActivity {
+public class MainActivityProOp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +22,7 @@ public class MainActivityProOP extends AppCompatActivity {
             return insets;
         });
     }
+
+
 
 }
