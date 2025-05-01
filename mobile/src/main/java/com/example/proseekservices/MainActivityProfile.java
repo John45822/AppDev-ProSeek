@@ -36,14 +36,5 @@ public class MainActivityProfile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        LinearLayout rate = findViewById(R.id.rate);
-        rate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityProfile.this, MainActivityProOP.class);
-                startActivity(intent);
-            }
-        });
     }
 }

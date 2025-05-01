@@ -31,7 +31,7 @@ public class MainActivityProOP extends AppCompatActivity {
         LinearLayout messagemikee_02 = findViewById(R.id.mess_mikee_02);
         LinearLayout messagedavee = findViewById(R.id.mess_davee);
         LinearLayout messagenanayluz = findViewById(R.id.mess_nanayluz);
-        LinearLayout messagema_santos = findViewById(R.id.mess_ma_santos);adf
+        LinearLayout messagema_santos = findViewById(R.id.mess_ma_santos);
 
         messageemily_01.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivityProOP.this, MainActivityConversation.class);

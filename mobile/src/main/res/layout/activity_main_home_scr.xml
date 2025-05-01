@@ -75,7 +75,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/proboy1" />
+                android:src="@drawable/profileremovebg" />
         </LinearLayout>
 
         <TextView
@@ -250,7 +250,6 @@
 
             <!-- Health Care -->
             <LinearLayout
-                android:id="@+id/healthcare"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -278,7 +277,6 @@
 
             <!-- Food Delivery -->
             <LinearLayout
-                android:id="@+id/fooddelivery"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -306,7 +304,6 @@
 
             <!-- Continue same for Photography, Rentals, etc. -->
             <LinearLayout
-                android:id="@+id/photography"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -333,7 +330,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/rentals"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -360,7 +356,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/machinery"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -387,7 +382,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tailoring"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"

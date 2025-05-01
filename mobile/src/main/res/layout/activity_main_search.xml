@@ -76,7 +76,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/proboy1" />
+            android:src="@drawable/profileremovebg" />
 
     </LinearLayout>
 
@@ -109,7 +109,7 @@
                     android:id="@+id/profile_image"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/progirl1"
+                    android:src="@drawable/profileremovebg"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
@@ -152,7 +152,7 @@
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/truemess" />
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
 
             <LinearLayout
@@ -171,7 +171,7 @@
                     android:id="@+id/profile_image1"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/proboy2"
+                    android:src="@drawable/profileremovebg"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
@@ -187,7 +187,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="s.john"
+                        android:text="george_02"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -214,7 +214,7 @@
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/truemess" />
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
 
             <LinearLayout
@@ -233,7 +233,7 @@
                     android:id="@+id/profile_image2"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/progirl2"
+                    android:src="@drawable/profileremovebg"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
@@ -249,7 +249,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="alexa99"
+                        android:text="maria_03"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -275,7 +275,7 @@
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/truemess" />
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
 
             <LinearLayout
@@ -294,7 +294,7 @@
                     android:id="@+id/profile_image3"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/proboy3"
+                    android:src="@drawable/profileremovebg"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
@@ -310,7 +310,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="davesmith"
+                        android:text="kristy_04"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -336,7 +336,7 @@
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/truemess" />
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
 
             <LinearLayout
@@ -355,7 +355,7 @@
                     android:id="@+id/profile_image4"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/progirl4"
+                    android:src="@drawable/profileremovebg"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
@@ -371,7 +371,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="nanayluz"
+                        android:text="spongy_05"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -397,7 +397,7 @@
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/truemess" />
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
 
             <LinearLayout
@@ -416,7 +416,7 @@
                     android:id="@+id/profile_image5"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/progirl1"
+                    android:src="@drawable/profileremovebg"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/rounded_edittext_2_bg"
@@ -432,7 +432,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="fritz"
+                        android:text="emily_01"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:textColor="#000000"/>
@@ -455,10 +455,11 @@
 
                 <!-- Chat bubble -->
                 <ImageView
+                    android:id="@+id/mess"
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/truemess" />
+                    android:src="@drawable/blackmessengerrmbg" />
             </LinearLayout>
 
         </LinearLayout>

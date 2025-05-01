@@ -7,11 +7,14 @@
     android:background="#00023E"
     tools:context=".MainActivityMessages">
 
+    <!-- Back Button here -->
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_margin="16dp"
+        android:layout_margin="7dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="?attr/selectableItemBackgroundBorderless"
@@ -19,47 +22,45 @@
         android:tint="@android:color/white"
         android:contentDescription="Back Button"/>
 
+
+
     <!-- Logo Section -->
     <LinearLayout
         android:id="@+id/logo_section"
-        android:layout_width="121dp"
-        android:layout_height="21dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnBack"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
+
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="51dp"
+            android:layout_width="30dp"
             android:layout_height="match_parent"
             android:src="@drawable/logo" />
 
-        <ImageView
-            android:id="@+id/proseektxt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/proseektext" />
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProSeek SERVICES"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
     </LinearLayout>
 
+
     <!-- Card Container -->
-
-    <ImageView
-        android:id="@+id/servicetxt"
-        android:layout_width="105dp"
-        android:layout_height="59dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="17dp"
-        android:layout_marginRight="142dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/servicestext" />
-
     <LinearLayout
         android:id="@+id/service_section"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/servicetxt"
+        android:layout_below="@+id/logo_section"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
@@ -79,7 +80,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/truemess" />
+                android:src="@drawable/blackmessengerrmbg" />
 
             <TextView
                 android:id="@+id/chats_label"
@@ -88,7 +89,7 @@
                 android:text="CHATS"
                 android:textStyle="bold"
                 android:textColor="#333333"
-                android:textSize="17sp"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp" />
         </LinearLayout>
 
@@ -118,10 +119,9 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/progirl1" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
-                        android:id="@+id/chat_emily_01"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -163,10 +163,9 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/proboy1" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
-                        android:id="@+id/chat_johnduskin"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -196,7 +195,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/chat_alexa99"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -209,7 +207,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/progirl2" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -241,7 +239,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/chat_mikee_02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -254,7 +251,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/proboy1" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -286,7 +283,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/chat_davee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -299,7 +295,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/proboy3" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -331,7 +327,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/chat_nanayluz"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -344,7 +339,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/progirl4" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -376,7 +371,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/chat_ma_santos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -389,7 +383,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="12dp"
                         android:contentDescription="User Avatar"
-                        android:src="@drawable/progirl3" />
+                        android:src="@drawable/profileremovebg" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -400,7 +394,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="\@ma.santos"
+                            android:text="\@fritz"
                             android:textColor="#333333"
                             android:textSize="16sp"
                             android:textStyle="bold" />

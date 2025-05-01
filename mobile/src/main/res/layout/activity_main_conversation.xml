@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="\@emily_01"
+            android:text="\@ethan01"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="\@emily_01"
+            android:text="\@ethan01"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#333333" />
