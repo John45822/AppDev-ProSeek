@@ -3,6 +3,7 @@ package com.example.proseekservices;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -25,6 +26,9 @@ public class MainActivitySearch extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageButton btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> onBackPressed());
 
         ImageView urprofile = findViewById(R.id.urprofile);
         urprofile.setOnClickListener(new View.OnClickListener() {
@@ -119,10 +123,10 @@ public class MainActivitySearch extends AppCompatActivity {
                 intent.putExtra("imageResId", R.drawable.proboy2);
                 break;
 
-            case "nancyluz":
+            case "nanayluz":
                 intent.putExtra("name", "NANCY LUZ");
                 intent.putExtra("username", "@nancyluz");
-                intent.putExtra("email", "nancyluz@gmail.com");
+                intent.putExtra("email", "nanayluz@gmail.com");
                 intent.putExtra("location", "KIBAWE");
                 intent.putExtra("rating", 4.3f);
                 intent.putExtra("imageResId", R.drawable.progirl4);
