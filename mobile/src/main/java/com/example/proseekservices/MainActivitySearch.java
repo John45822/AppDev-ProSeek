@@ -53,9 +53,12 @@ public class MainActivitySearch extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivitySearch.this, MainActivityConversation.class);
+                intent.putExtra("username", "emily_01"); // username
+                intent.putExtra("profilePic", R.drawable.progirl1); // profile picture resource
                 startActivity(intent);
             }
         });
+
 
         // ======= Add these lines =======
 
