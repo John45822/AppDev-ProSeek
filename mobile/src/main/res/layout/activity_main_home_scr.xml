@@ -75,7 +75,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/profileremovebg" />
+                android:src="@drawable/proboy3" />
         </LinearLayout>
 
         <TextView
