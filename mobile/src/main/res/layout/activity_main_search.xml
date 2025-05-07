@@ -164,7 +164,7 @@
 
                 <!-- Chat bubble -->
                 <ImageView
-                    android:id="@+id/mess"
+                    android:id="@+id/mess0"
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
@@ -288,6 +288,7 @@
 
                 <!-- Chat bubble -->
                 <ImageView
+                    android:id="@+id/mess2"
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
@@ -349,6 +350,7 @@
 
                 <!-- Chat bubble -->
                 <ImageView
+                    android:id="@+id/mess3"
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
@@ -410,6 +412,7 @@
 
                 <!-- Chat bubble -->
                 <ImageView
+                    android:id="@+id/mess4"
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"
@@ -471,7 +474,7 @@
 
                 <!-- Chat bubble -->
                 <ImageView
-                    android:id="@+id/mess"
+                    android:id="@+id/mess5"
                     android:layout_width="60dp"
                     android:layout_height="47dp"
                     android:layout_marginStart="8dp"

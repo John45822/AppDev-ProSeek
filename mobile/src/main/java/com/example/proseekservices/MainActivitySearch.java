@@ -91,19 +91,19 @@ public class MainActivitySearch extends AppCompatActivity {
                 break;
 
             case "s.john":
-                intent.putExtra("name", "SARAH JOHNSON");
+                intent.putExtra("name", "SEAN JOHNSON");
                 intent.putExtra("username", "@s.john");
-                intent.putExtra("email", "sarahjohn@gmail.com");
+                intent.putExtra("email", "seanjohn@gmail.com");
                 intent.putExtra("location", "VALENCIA");
                 intent.putExtra("rating", 4.5f);
-                intent.putExtra("imageResId", R.drawable.progirl2);
+                intent.putExtra("imageResId", R.drawable.proboy2);
                 break;
 
             case "alexa99":
                 intent.putExtra("name", "ALEXA RIVERA");
                 intent.putExtra("username", "@alexa99");
                 intent.putExtra("email", "alexariv@gmail.com");
-                intent.putExtra("location", "MANOLO FORTICH");
+                intent.putExtra("location", "VALENCIA");
                 intent.putExtra("rating", 4.0f);
                 intent.putExtra("imageResId", R.drawable.progirl3);
                 break;
@@ -112,7 +112,7 @@ public class MainActivitySearch extends AppCompatActivity {
                 intent.putExtra("name", "ETHAN WALKER");
                 intent.putExtra("username", "@ethan01");
                 intent.putExtra("email", "ethanwalker@gmail.com");
-                intent.putExtra("location", "DON CARLOS");
+                intent.putExtra("location", "MARAMAG");
                 intent.putExtra("rating", 4.2f);
                 intent.putExtra("imageResId", R.drawable.proboy1);
                 break;
@@ -121,16 +121,16 @@ public class MainActivitySearch extends AppCompatActivity {
                 intent.putExtra("name", "DAVE SMITH");
                 intent.putExtra("username", "@davesmith");
                 intent.putExtra("email", "dsmith88@gmail.com");
-                intent.putExtra("location", "IMPASUGONG");
+                intent.putExtra("location", "MALAYBALAY");
                 intent.putExtra("rating", 4.8f);
-                intent.putExtra("imageResId", R.drawable.proboy2);
+                intent.putExtra("imageResId", R.drawable.proboy3);
                 break;
 
             case "nancyluz":
                 intent.putExtra("name", "NANCY LUZ");
                 intent.putExtra("username", "@nancyluz");
                 intent.putExtra("email", "nancyluz@gmail.com");
-                intent.putExtra("location", "KIBAWE");
+                intent.putExtra("location", "MARAMAG");
                 intent.putExtra("rating", 4.3f);
                 intent.putExtra("imageResId", R.drawable.progirl4);
                 break;
