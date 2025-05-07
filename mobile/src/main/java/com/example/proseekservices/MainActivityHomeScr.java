@@ -41,18 +41,17 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Tutoring"); // ✅ Add this line
+                intent.putExtra("category", "tutoring");
                 startActivity(intent);
             }
         });
 
-
-        LinearLayout houseChores = findViewById(R.id.housechores);
-        houseChores.setOnClickListener(new View.OnClickListener() {
+        LinearLayout housechores = findViewById(R.id.housechores);
+        housechores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "House Chores");
+                intent.putExtra("category", "housechores");
                 startActivity(intent);
             }
         });
@@ -62,7 +61,7 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Project");
+                intent.putExtra("category", "project");
                 startActivity(intent);
             }
         });
@@ -72,7 +71,7 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Assistant");
+                intent.putExtra("category", "assistant");
                 startActivity(intent);
             }
         });
@@ -82,61 +81,10 @@ public class MainActivityHomeScr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Health Care");
+                intent.putExtra("category", "healthcare");
                 startActivity(intent);
             }
         });
-
-        LinearLayout fooddelivery = findViewById(R.id.fooddelivery);
-        fooddelivery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Food Delivery");
-                startActivity(intent);
-            }
-        });
-
-        LinearLayout photography = findViewById(R.id.photography);
-        photography.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Photography");
-                startActivity(intent);
-            }
-        });
-
-        LinearLayout rentals = findViewById(R.id.rentals);
-        rentals.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Rentals");
-                startActivity(intent);
-            }
-        });
-
-        LinearLayout machinery = findViewById(R.id.machinery);
-        machinery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Machinery");
-                startActivity(intent);
-            }
-        });
-
-        LinearLayout tailoring = findViewById(R.id.tailoring);
-        tailoring.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityHomeScr.this, MainActivitySearch.class);
-                intent.putExtra("serviceType", "Tailoring");
-                startActivity(intent);
-            }
-        });
-
 
         ImageView urprofile = findViewById(R.id.urprofile);
         urprofile.setOnClickListener(new View.OnClickListener() {
@@ -156,6 +104,9 @@ public class MainActivityHomeScr extends AppCompatActivity {
 
             }
         });
+
+
+
 
     }
 }

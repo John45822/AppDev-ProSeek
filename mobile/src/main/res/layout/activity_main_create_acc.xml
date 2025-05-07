@@ -98,21 +98,4 @@
         android:paddingBottom="12dp"
         />
 
-    <Button
-        android:id="@+id/back_to_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/create"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="BACK TO LOGIN"
-        android:background="@drawable/login_button_outline"
-        android:textColor="@android:color/white"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp" />
-
-
-
 </RelativeLayout>
