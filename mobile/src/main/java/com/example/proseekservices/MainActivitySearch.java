@@ -126,10 +126,10 @@ public class MainActivitySearch extends AppCompatActivity {
                 intent.putExtra("imageResId", R.drawable.proboy2);
                 break;
 
-            case "nanayluz":
+            case "nancyluz":
                 intent.putExtra("name", "NANCY LUZ");
                 intent.putExtra("username", "@nancyluz");
-                intent.putExtra("email", "nanayluz@gmail.com");
+                intent.putExtra("email", "nancyluz@gmail.com");
                 intent.putExtra("location", "KIBAWE");
                 intent.putExtra("rating", 4.3f);
                 intent.putExtra("imageResId", R.drawable.progirl4);
