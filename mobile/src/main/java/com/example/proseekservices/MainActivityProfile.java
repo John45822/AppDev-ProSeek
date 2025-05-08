@@ -36,8 +36,5 @@ public class MainActivityProfile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        ImageButton btnBack = findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(v -> onBackPressed());
     }
 }

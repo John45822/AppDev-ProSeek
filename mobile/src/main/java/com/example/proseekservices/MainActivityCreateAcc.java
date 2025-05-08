@@ -64,18 +64,6 @@ public class MainActivityCreateAcc extends AppCompatActivity {
             }
         });
 
-        Button btnBackToLogin = findViewById(R.id.btnBackToLogin);
-        btnBackToLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate back to MainActivity (assuming it's your login screen)
-                Intent intent = new Intent(MainActivityCreateAcc.this, MainActivity.class);
-                startActivity(intent);
-                finish(); // Optional: closes current screen
-            }
-        });
-
-
 
 
 

@@ -14,17 +14,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="16dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/baseline_arrow_back_24"
-            android:tint="@android:color/white"
-            android:contentDescription="Back Button" />
-
-
         <!-- Profile Section -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +36,7 @@
                     android:id="@+id/profile_image"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/proboy3" />
+                    android:src="@drawable/profileremovebg" />
 
                 <TextView
                     android:id="@+id/username"
@@ -316,7 +305,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RATED &amp; REVIEWED"
+            android:text="RATINGS &amp; REVIEWS"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -337,8 +326,8 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/proboy1"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/profileremovebg"
                 android:layout_gravity="center_vertical" />
 
             <LinearLayout
@@ -351,7 +340,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\@franky_05"
+                    android:text="\@emily_01"
                     android:textStyle="bold"
                     android:textColor="#000000"
                     android:textSize="12sp" />
@@ -391,8 +380,8 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/progirl2"
-                android:layout_marginLeft="15dp"
+                android:src="@drawable/profileremovebg"
+                android:layout_marginLeft="30dp"
                 android:layout_gravity="center_vertical" />
 
             <LinearLayout
@@ -445,8 +434,8 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/proboy3"
-                android:layout_marginLeft="15dp"
+                android:src="@drawable/profileremovebg"
+                android:layout_marginLeft="30dp"
                 android:layout_gravity="center_vertical" />
 
             <LinearLayout
@@ -488,22 +477,20 @@
         </LinearLayout>
 
         <!-- Review 4 -->
-
-        <!-- Review 5 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_edittext_2_bg"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:layout_marginBottom="8dp">
 
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/progirl4" />
+                android:src="@drawable/profileremovebg"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -516,9 +503,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="\@nancyluz"
+                    android:textStyle="bold"
                     android:textColor="#000000"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -531,9 +518,9 @@
                     style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:isIndicator="true"
                     android:numStars="5"
-                    android:rating="4" />
+                    android:rating="4"
+                    android:isIndicator="true" />
             </LinearLayout>
 
             <ImageView
@@ -543,6 +530,7 @@
                 android:src="@drawable/dotsrmvbg" />
         </LinearLayout>
 
+        <!-- Review 5 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -554,8 +542,8 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/proboy2"
-                android:layout_marginLeft="15dp"
+                android:src="@drawable/profileremovebg"
+                android:layout_marginLeft="30dp"
                 android:layout_gravity="center_vertical" />
 
             <LinearLayout
@@ -607,8 +595,8 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/proboy3"
-                android:layout_marginLeft="15dp"
+                android:src="@drawable/profileremovebg"
+                android:layout_marginLeft="30dp"
                 android:layout_gravity="center_vertical" />
 
             <LinearLayout

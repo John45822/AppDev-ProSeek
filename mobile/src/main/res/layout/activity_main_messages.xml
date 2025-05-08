@@ -147,13 +147,12 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/progirl1" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/second"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:layout_marginBottom="10dp"
@@ -192,13 +191,12 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/proboy2" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/third"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:layout_marginBottom="10dp"
@@ -237,13 +235,12 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/progirl2" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/fourth"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:layout_marginBottom="10dp"
@@ -282,13 +279,12 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/proboy1" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/fifth"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:layout_marginBottom="10dp"
@@ -327,13 +323,12 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/proboy3" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/sixth"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:layout_marginBottom="10dp"
@@ -372,13 +367,12 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/progirl4" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/seventh"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:layout_marginBottom="10dp"
@@ -417,7 +411,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="Options"
-                        android:src="@drawable/progirl3" />
+                        android:src="@drawable/dotsrmvbg" />
                 </LinearLayout>
 
 
