@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "465398362475",
+    "project_id": "proseek-b9b97",
+    "storage_bucket": "proseek-b9b97.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465398362475:android:d447e7f7e04751fbfd1c2e",
+        "android_client_info": {
+          "package_name": "com.example.proseekservices"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw6_6GE5ayxVb8sJGGQmCr2BX_Siy1TwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
