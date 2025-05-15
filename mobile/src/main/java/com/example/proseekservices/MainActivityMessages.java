@@ -3,14 +3,18 @@ package com.example.proseekservices;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton; // <-- ADD THIS!
-import android.widget.LinearLayout;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivityMessages extends AppCompatActivity {
 
@@ -26,13 +30,23 @@ public class MainActivityMessages extends AppCompatActivity {
             return insets;
         });
 
-        LinearLayout chat1 = findViewById(R.id.first);
-        chat1.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivityMessages.this, MainActivityConversation.class);
-            startActivity(intent);
-        });
-
         ImageButton btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(v -> onBackPressed());
+
+        RecyclerView chatRecyclerView = findViewById(R.id.chatRecyclerView);
+        chatRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        List<Chat> chatList = new ArrayList<>();
+        chatList.add(new Chat("Username", "Hey there!"));
+        chatList.add(new Chat("Username", "See you tomorrow."));
+        chatList.add(new Chat("Username", "Thanks for the update."));
+
+        ChatAdapter adapter = new ChatAdapter(chatList, chat -> {
+            Intent intent = new Intent(MainActivityMessages.this, MainActivityConversation.class);
+            intent.putExtra("username", chat.getName()); // ✅ Pass clicked name
+            startActivity(intent);
+        });
+        chatRecyclerView.setAdapter(adapter);
+
     }
 }

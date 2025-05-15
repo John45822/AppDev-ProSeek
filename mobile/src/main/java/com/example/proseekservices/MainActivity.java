@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,59 +15,72 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText etEmail, etPwd;
+    Button loginbtn, createacc;
+    ProseekDB dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-
-        ProseekDB dbHelper;
-        Button loginbtn, createacc;
-        EditText etEmail,etPwd;
-
+        // Initialize views
         dbHelper = new ProseekDB(this);
-
         etEmail = findViewById(R.id.email);
         etPwd = findViewById(R.id.password);
         loginbtn = findViewById(R.id.loginbtn);
         createacc = findViewById(R.id.createacc);
+
+        // Login Button
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean isLoggedID = dbHelper.checkUser(etEmail.getText().toString(), etPwd.getText().toString());
-                if (isLoggedID){
-                    Intent intent = new Intent(MainActivity.this, MainActivityHomeScr.class);
-                    startActivity(intent);
+                if (isLoggedID) {
+                    // Navigate to Home Screen
+                    Intent homeIntent = new Intent(MainActivity.this, MainActivityHomeScr.class);
+                    startActivity(homeIntent);
 
-                }else{
+                    // OPTIONAL: Navigate directly to conversation screen (remove if not needed)
+                    /*
+                    Intent convoIntent = new Intent(MainActivity.this, MainActivityConversation.class);
+                    convoIntent.putExtra("username", "@emily_01");
+                    convoIntent.putExtra("profilePicRes", R.drawable.profileremovebg); // Optional
+                    startActivity(convoIntent);
+                    */
+
+                } else {
                     Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_LONG).show();
-
                 }
             }
         });
 
-
+        // Create Account Button
         createacc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MainActivityCreateAcc.class);
-                startActivity(intent);
-
+                Intent createAccIntent = new Intent(MainActivity.this, MainActivityCreateAcc.class);
+                startActivity(createAccIntent);
             }
         });
+    }
+}
 
 
 
 
 
 
-        //Admin and Admin
+
+
+//Admin and Admin
 //        loginbtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -91,5 +103,3 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
-    }
-}

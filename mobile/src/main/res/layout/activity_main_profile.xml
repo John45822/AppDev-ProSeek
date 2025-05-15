@@ -249,30 +249,6 @@
                             android:textSize="12sp" />
                     </LinearLayout>
 
-                    <!-- Settings -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingBottom="8dp">
-
-                        <ImageView
-                            android:layout_width="18dp"
-                            android:layout_height="18dp"
-                            android:layout_marginEnd="8dp"
-                            android:src="@drawable/seeting1" />
-
-                        <TextView
-                            android:id="@+id/settings"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingRight="10dp"
-                            android:text="Settings"
-                            android:textColor="#AAAAAA"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
                     <!-- Logout -->
                     <LinearLayout
                         android:id="@+id/loggingout"
